@@ -28,20 +28,20 @@ const [modal, setModal] = useState(false);
     resize();
     window.addEventListener("resize", resize);
 
-    const IMAGE_COUNT = 3;
+    const IMAGE_COUNT = 9;
     const images = [];
     let loaded = 0;
 
     for (let i = 0; i < IMAGE_COUNT; i++) {
       const img = new Image();
-      img.src = `/zoom/${i}.jpeg`;
+      img.src = `/zoom/${i}.jpg`;
       img.onload = () => loaded++;
       images.push(img);
     }
 
     let index = 0;
     let t = 0; // zoom progress (0 → 1)
-    const speed = 0.0004;
+    const speed = 0.0012;
 
     function easeInOut(t) {
       return t * t * (3 - 2 * t);
