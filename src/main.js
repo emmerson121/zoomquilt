@@ -28,7 +28,7 @@ const [modal, setModal] = useState(false);
     resize();
     window.addEventListener("resize", resize);
 
-    const IMAGE_COUNT = 9;
+    const IMAGE_COUNT = 7;
     const images = [];
     let loaded = 0;
 
@@ -134,11 +134,11 @@ Created in 2004</p>
 
 <p className="collab1">Up and down keys to navigate</p>
 
-<p className="text1">A project by <a href="nikkki.net" className="link1">Nikolaus Baumgarten</a>
+<p className="text1">A project by<a href="nikkki.net" className="link1">Nikolaus Baumgarten</a>
 <span className="socials">
-  <a href="instagram.com" className="social"><div className="image1"><img src={insta} alt="" className="image" /></div></a>
-  <a href="twitter.com" className="social"><div className="image1"><img src={twitter} alt="" className="image" /></div></a>
-  <a href="youtube.com" className="social"><div className="image1"><img src={youtube} alt="" className="image" /></div></a>
+  <a href="instagram.com" className="social"><div className="image1"><img src={insta} alt="instagram" className="image" /></div></a>
+  <a href="twitter.com" className="social"><div className="image1"><img src={twitter} alt="x" className="image" /></div></a>
+  <a href="youtube.com" className="social"><div className="image1"><img src={youtube} alt="youtube" className="image" /></div></a>
   </span></p>
 
   <p className="collab3">Participating illustrators: 
@@ -150,7 +150,7 @@ Created in 2004</p>
 
     <p><a href="https://www.youtube.com/watch?v=RpHnKaxt_OQ" className="zoom">The Zoomquilt on YouTube</a></p>
 
-    <p className="read"><a href="/">Read about the history of this project</a></p>
+    <p><a href="/" className="read">Read about the history of this project</a></p>
 
     <div className="phase links">
       <a href="/" className="sec1">
@@ -164,7 +164,7 @@ Created in 2004</p>
       <a href="/" className="sec1">
         Live Wallpaper for Andriod
         <br />
-        <div className="image2"><img src={google} alt="" className="image3"/></div>
+        <div className="image2"><img src={google} alt="google" className="image3"/></div>
       </a>
     </div>
 
@@ -172,7 +172,7 @@ Created in 2004</p>
       <a href="/" className="sec1">
         Infinite flowers
         <br />
-        <div className="image4"><img src={flowers} alt="" className="image3"/></div>
+        <div className="image4"><img src={flowers} alt="flowers" className="image3"/></div>
       </a>
     </div>
 
@@ -180,7 +180,7 @@ Created in 2004</p>
       <a href="/" className="sec1">
         Arkadia
         <br />
-        <div className="image4"><img src={arkadia} alt="" className="image3"/></div>
+        <div className="image4"><img src={arkadia} alt="arkadia" className="image3"/></div>
       </a>
     </div>
 
@@ -188,7 +188,7 @@ Created in 2004</p>
       <a href="/" className="sec1">
         Zoomquilt2
         <br />
-        <div className="image4"><img src={zoomquilt2} alt="" className="image3"/></div>
+        <div className="image4"><img src={zoomquilt2} alt="zoomquilt" className="image3"/></div>
       </a>
     </div>
 
