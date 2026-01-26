@@ -136,9 +136,9 @@ Created in 2004</p>
 
 <p className="text1">A project by <a href="nikkki.net" className="link1">Nikolaus Baumgarten</a>
 <span className="socials">
-  <a href="instagram.com" className="social"><div className="image1"><img src={insta} className="image" /></div></a>
-  <a href="twitter.com" className="social"><div className="image1"><img src={twitter} className="image" /></div></a>
-  <a href="youtube.com" className="social"><div className="image1"><img src={youtube} className="image" /></div></a>
+  <a href="instagram.com" className="social"><div className="image1"><img src={insta} alt="" className="image" /></div></a>
+  <a href="twitter.com" className="social"><div className="image1"><img src={twitter} alt="" className="image" /></div></a>
+  <a href="youtube.com" className="social"><div className="image1"><img src={youtube} alt="" className="image" /></div></a>
   </span></p>
 
   <p className="collab3">Participating illustrators: 
@@ -150,49 +150,49 @@ Created in 2004</p>
 
     <p><a href="https://www.youtube.com/watch?v=RpHnKaxt_OQ" className="zoom">The Zoomquilt on YouTube</a></p>
 
-    <p className="read"><a>Read about the history of this project</a></p>
+    <p className="read"><a href="/">Read about the history of this project</a></p>
 
     <div className="phase links">
-      <a href="" className="sec1">
+      <a href="/" className="sec1">
         Screensaver for Mac
         <br />
-        <div className="image2"><img src={Mac} className="image3"/></div>
+        <div className="image2"><img src={Mac} alt="" className="image3"/></div>
       </a>
     </div>
 
     <div className="phase links">
-      <a href="" className="sec1">
+      <a href="/" className="sec1">
         Live Wallpaper for Andriod
         <br />
-        <div className="image2"><img src={google} className="image3"/></div>
+        <div className="image2"><img src={google} alt="" className="image3"/></div>
       </a>
     </div>
 
     <div className="phase links">
-      <a href="" className="sec1">
+      <a href="/" className="sec1">
         Infinite flowers
         <br />
-        <div className="image4"><img src={flowers} className="image3"/></div>
+        <div className="image4"><img src={flowers} alt="" className="image3"/></div>
       </a>
     </div>
 
     <div className="phase links">
-      <a href="" className="sec1">
+      <a href="/" className="sec1">
         Arkadia
         <br />
-        <div className="image4"><img src={arkadia} className="image3"/></div>
+        <div className="image4"><img src={arkadia} alt="" className="image3"/></div>
       </a>
     </div>
 
     <div className="phase links">
-      <a href="" className="sec1">
+      <a href="/" className="sec1">
         Zoomquilt2
         <br />
-        <div className="image4"><img src={zoomquilt2} className="image3"/></div>
+        <div className="image4"><img src={zoomquilt2} alt="" className="image3"/></div>
       </a>
     </div>
 
-    <p className="privacy1"><a href="" className="privacy">Privacy policy and Legal Notice</a></p>
+    <p className="privacy1"><a href="/" className="privacy">Privacy policy and Legal Notice</a></p>
     </div>
           </div>
   }
