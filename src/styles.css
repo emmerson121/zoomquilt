@@ -17,6 +17,10 @@
     max-width: 100%;
 }
 
+.zoomq{
+    color: #ff5219;
+}
+
 .text1{
     /* width: 100%; */
     display: flex;

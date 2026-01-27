@@ -128,7 +128,7 @@ const [modal, setModal] = useState(false);
     <div className="main">
 
     <div className="container">
-      <h1 style={{color: "#ff5219"}}>The Zoomquilt</h1>
+      <h1 className="zoomq">The Zoomquilt</h1>
       <p className="collab">A collaborative infinitely zooming painting
 Created in 2004</p>
 
