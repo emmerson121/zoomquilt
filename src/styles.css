@@ -105,8 +105,12 @@
 
 .sec1{
     color: #ff95f5;
-    text-decoration: none;
-    
+    text-decoration: none;   
+}
+
+.sec2{
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .text2{

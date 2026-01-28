@@ -14,6 +14,17 @@ export default function ZoomQuiltAdvanced() {
 const [modal, setModal] = useState(false);
   const canvasRef = useRef(null);
 
+  const imgShow = [
+    {brand: 'Screensaver for Mac', slide1: <img src={Mac} alt="designs" className="image3" />},
+    {brand: 'Live Wallpaper for Andriod', slide1: <img src={google} alt="designs1" className="image3" />}
+  ]
+
+  const imgShow1 = [
+    {firstText: 'Infinite flowers', img1: <img src={flowers} alt="images" className="image3" />},
+    {firstText: 'Arkadia', img1: <img src={arkadia} alt="images" className="image3" />},
+    {firstText: 'Zoomquilt2', img1: <img src={zoomquilt2} alt="images" className="image3" />}
+  ]
+
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -154,44 +165,26 @@ Created in 2004</p>
 
     <div className="phase links">
       <a href="/" className="sec1">
-        Screensaver for Mac
-        <br />
-        <div className="image2"><img src={Mac} alt="" className="image3"/></div>
+      {imgShow.map((app, id ) => (
+        <div className="sec2" key={id}>
+          <div>{app.brand}</div> 
+<div className="image2">{app.slide1}</div>
+</div>
+      ))}
       </a>
     </div>
 
     <div className="phase links">
       <a href="/" className="sec1">
-        Live Wallpaper for Andriod
-        <br />
-        <div className="image2"><img src={google} alt="google" className="image3"/></div>
+      {imgShow1.map((app, id ) => (
+        <div className="sec2" key={id}>
+          <div>{app.firstText}</div> 
+<div className="image4">{app.img1}</div>
+</div>
+      ))}
       </a>
     </div>
-
-    <div className="phase links">
-      <a href="/" className="sec1">
-        Infinite flowers
-        <br />
-        <div className="image4"><img src={flowers} alt="flowers" className="image3"/></div>
-      </a>
-    </div>
-
-    <div className="phase links">
-      <a href="/" className="sec1">
-        Arkadia
-        <br />
-        <div className="image4"><img src={arkadia} alt="arkadia" className="image3"/></div>
-      </a>
-    </div>
-
-    <div className="phase links">
-      <a href="/" className="sec1">
-        Zoomquilt2
-        <br />
-        <div className="image4"><img src={zoomquilt2} alt="zoomquilt" className="image3"/></div>
-      </a>
-    </div>
-
+    
     <p className="privacy1"><a href="/" className="privacy">Privacy policy and Legal Notice</a></p>
     </div>
           </div>
