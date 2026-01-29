@@ -39,9 +39,9 @@ const [modal, setModal] = useState(false);
     resize();
     window.addEventListener("resize", resize);
 
-    const IMAGE_COUNT = 4;
-    const images = [];
-    let loaded = 0;
+    // const IMAGE_COUNT = 4;
+    // const images = [];
+    // let loaded = 0;
 
     // for (let i = 0; i < IMAGE_COUNT; i++) {
     //   const img = new Image();
@@ -52,8 +52,26 @@ const [modal, setModal] = useState(false);
 
     
     
+// function handleImageLoad() {
+//   loaded++;
+// }
+
+// for (let i = 0; i < IMAGE_COUNT; i++) {
+//   const img = new Image();
+//   img.src = `/zoom/${i}.jpg`;
+//   img.onload = handleImageLoad;
+//   images.push(img);
+// }
+
+const IMAGE_COUNT = 4;
+const images = [];
+let loaded = 0;
+
 function handleImageLoad() {
   loaded++;
+  if (loaded === IMAGE_COUNT) {
+    loop(); // start animation only when all images are loaded
+  }
 }
 
 for (let i = 0; i < IMAGE_COUNT; i++) {
@@ -62,6 +80,7 @@ for (let i = 0; i < IMAGE_COUNT; i++) {
   img.onload = handleImageLoad;
   images.push(img);
 }
+
 
     let index = 0;
     let t = 0; // zoom progress (0 → 1)
@@ -132,7 +151,7 @@ for (let i = 0; i < IMAGE_COUNT; i++) {
       requestAnimationFrame(loop);
     }
 
-    loop();
+    // loop();
 
     return () => {
       window.removeEventListener("resize", resize);
