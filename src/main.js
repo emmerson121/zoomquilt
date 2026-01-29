@@ -30,7 +30,7 @@ const [toggle, setToggle] = useState(false)
 
   const closeModal = () => {
     setToggle(true);
-    document.body.style.overflow = "auto";
+    // document.body.style.overflow = "auto";
   };
 
   useEffect(() => {
@@ -156,7 +156,7 @@ for (let i = 0; i < IMAGE_COUNT; i++) {
     <div className="container">
       <div className="navBar">
       <h1 className="zoomq">The Zoomquilt</h1>
-    <div className="xmark1"><FontAwesomeIcon className="xmark" onClick={() => setModal(!modal)} icon={faXmark} /></div>
+    <div><FontAwesomeIcon className="xmark" onClick={() => setModal(!modal)} icon={faXmark} /></div>
       </div>
       <p className="collab">A collaborative infinitely zooming painting
 Created in 2004</p>
