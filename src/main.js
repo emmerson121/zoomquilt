@@ -30,7 +30,6 @@ const [toggle, setToggle] = useState(false)
 
   const closeModal = () => {
     setToggle(true);
-    // document.body.style.overflow = "auto";
   };
 
   useEffect(() => {
@@ -203,7 +202,7 @@ Created in 2004</p>
       </a>
     </div>
     
-    <p className="privacy1"><a href="/" className="privacy">Privacy policy and Legal Notice</a></p>
+    <p className="privacy1"><a href="/" className="privacy">Privacy policy and Legal Notice.</a></p>
     </div>
           </div>
   }
