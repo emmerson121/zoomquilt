@@ -39,31 +39,8 @@ const [modal, setModal] = useState(false);
     resize();
     window.addEventListener("resize", resize);
 
-    // const IMAGE_COUNT = 4;
-    // const images = [];
-    // let loaded = 0;
 
-    // for (let i = 0; i < IMAGE_COUNT; i++) {
-    //   const img = new Image();
-    //   img.src = `/zoom/${i}.jpg`;
-    //   img.onload = () => loaded++;
-    //   images.push(img);
-    // }
-
-    
-    
-// function handleImageLoad() {
-//   loaded++;
-// }
-
-// for (let i = 0; i < IMAGE_COUNT; i++) {
-//   const img = new Image();
-//   img.src = `/zoom/${i}.jpg`;
-//   img.onload = handleImageLoad;
-//   images.push(img);
-// }
-
-const IMAGE_COUNT = 4;
+const IMAGE_COUNT = 3;
 const images = [];
 let loaded = 0;
 
@@ -151,7 +128,6 @@ for (let i = 0; i < IMAGE_COUNT; i++) {
       requestAnimationFrame(loop);
     }
 
-    // loop();
 
     return () => {
       window.removeEventListener("resize", resize);
