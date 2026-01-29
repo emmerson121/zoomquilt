@@ -14,7 +14,6 @@ import zoomquilt2 from './img/zoomquilt2.jpg';
 
 export default function ZoomQuiltAdvanced() {
 const [modal, setModal] = useState(false);
-const [toggle, setToggle] = useState(false)
   const canvasRef = useRef(null);
 
   const imgShow = [
@@ -28,9 +27,9 @@ const [toggle, setToggle] = useState(false)
     {firstText: 'Zoomquilt2', img1: <img src={zoomquilt2} alt="images" className="image3" />}
   ]
 
-  const closeModal = () => {
-    setToggle(true);
-  };
+  // const closeModal = () => {
+  //   setToggle(true);
+  // };
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -150,7 +149,7 @@ for (let i = 0; i < IMAGE_COUNT; i++) {
         background: "black",
       }}
     />
-  {modal && !toggle && 
+  {modal && 
     <div className="main">
     <div className="container">
       <div className="navBar">
