@@ -39,16 +39,29 @@ const [modal, setModal] = useState(false);
     resize();
     window.addEventListener("resize", resize);
 
-    const IMAGE_COUNT = 7;
+    const IMAGE_COUNT = 4;
     const images = [];
     let loaded = 0;
 
-    for (let i = 0; i < IMAGE_COUNT; i++) {
-      const img = new Image();
-      img.src = `/zoom/${i}.jpg`;
-      img.onload = () => loaded++;
-      images.push(img);
-    }
+    // for (let i = 0; i < IMAGE_COUNT; i++) {
+    //   const img = new Image();
+    //   img.src = `/zoom/${i}.jpg`;
+    //   img.onload = () => loaded++;
+    //   images.push(img);
+    // }
+
+    
+    
+function handleImageLoad() {
+  loaded++;
+}
+
+for (let i = 0; i < IMAGE_COUNT; i++) {
+  const img = new Image();
+  img.src = `/zoom/${i}.jpg`;
+  img.onload = handleImageLoad;
+  images.push(img);
+}
 
     let index = 0;
     let t = 0; // zoom progress (0 → 1)
@@ -137,7 +150,6 @@ const [modal, setModal] = useState(false);
     />
   {modal && 
     <div className="main">
-
     <div className="container">
       <h1 className="zoomq">The Zoomquilt</h1>
       <p className="collab">A collaborative infinitely zooming painting
