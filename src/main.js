@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark} from '@fortawesome/free-solid-svg-icons'
 import './styles.css';
 import insta from './img/insta.jpg';
 import twitter from './img/twitter.png';
@@ -12,6 +14,7 @@ import zoomquilt2 from './img/zoomquilt2.jpg';
 
 export default function ZoomQuiltAdvanced() {
 const [modal, setModal] = useState(false);
+const [toggle, setToggle] = useState(false)
   const canvasRef = useRef(null);
 
   const imgShow = [
@@ -24,6 +27,11 @@ const [modal, setModal] = useState(false);
     {firstText: 'Arkadia', img1: <img src={arkadia} alt="images" className="image3" />},
     {firstText: 'Zoomquilt2', img1: <img src={zoomquilt2} alt="images" className="image3" />}
   ]
+
+  const closeModal = () => {
+    setToggle(true);
+    document.body.style.overflow = "auto";
+  };
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -143,10 +151,13 @@ for (let i = 0; i < IMAGE_COUNT; i++) {
         background: "black",
       }}
     />
-  {modal && 
+  {modal && !toggle && 
     <div className="main">
     <div className="container">
+      <div className="navBar">
       <h1 className="zoomq">The Zoomquilt</h1>
+    <div className="xmark1"><FontAwesomeIcon className="xmark" onClick={() => setModal(!modal)} icon={faXmark} /></div>
+      </div>
       <p className="collab">A collaborative infinitely zooming painting
 Created in 2004</p>
 
